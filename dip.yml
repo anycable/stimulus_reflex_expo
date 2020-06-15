@@ -41,6 +41,16 @@ interaction:
         compose:
           run_options: [service-ports, use-aliases]
 
+  anycable:
+    description: Run AnyCable RPC server
+    service: anycable
+    compose_run_options: [service-ports, use-aliases]
+
+  ws:
+    description: Run AnyCable WebSocket server w/o deps
+    service: ws
+    compose_run_options: [service-ports, no-deps]
+
   rspec:
     description: Run RSpec commands within test environment
     service: backend

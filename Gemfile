@@ -22,6 +22,7 @@ gem "sidekiq", "~> 6.0"
 gem "stimulus_reflex", "3.2.2"
 gem "valid_email", "~> 0.1"
 gem "webpacker", "~> 5.0"
+gem "anycable-rails", github: "anycable/anycable-rails"
 
 group :development, :test do
   gem "awesome_print"

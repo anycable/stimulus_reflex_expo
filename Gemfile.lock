@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/anycable/anycable-rails.git
+  revision: 7e5adac5c9d4081210e8bae02dd5adde8ec71b67
+  specs:
+    anycable-rails (1.0.0.rc1)
+      anycable (= 1.0.0.rc1)
+      rails (>= 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,6 +69,11 @@ GEM
     annotate (3.1.1)
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 14.0)
+    anycable (1.0.0.rc1)
+      anyway_config (>= 1.4.2)
+      grpc (~> 1.17)
+    anyway_config (2.0.5)
+      ruby-next-core (>= 0.8.0)
     ast (2.4.0)
     awesome_print (1.8.0)
     bindex (0.8.1)
@@ -100,6 +113,12 @@ GEM
       rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    google-protobuf (3.12.2)
+    googleapis-common-protos-types (1.0.5)
+      google-protobuf (~> 3.11)
+    grpc (1.28.0)
+      google-protobuf (~> 3.11)
+      googleapis-common-protos-types (~> 1.0)
     http (4.4.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -206,6 +225,7 @@ GEM
       parser (>= 2.7.0.1)
     rubocop-performance (1.6.1)
       rubocop (>= 0.71.0)
+    ruby-next-core (0.9.1)
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     rubyzip (2.3.0)
@@ -288,6 +308,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  anycable-rails!
   awesome_print
   bootsnap (>= 1.4)
   byebug

@@ -1,4 +1,6 @@
-# StimulusReflex Expo
+# StimulusReflex Expo (AnyCable version)
+
+This is a fork of the original [StimulusReflex Expo](https://github.com/hopsoft/stimulus_reflex_expo) configured to run with AnyCable (see the latest commit for required changes).
 
 ## Local Setup
 

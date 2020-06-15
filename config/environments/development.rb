@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
+  config.secret_key_base = "9e46ba6944fd91782a90a18967f3f78d2b2a07de8ec04f88b97325db3b83fe391de473bd383e7faece403546fcc70bd967186373469f841889bca88d55d89a0f"
+
+  # Specify AnyCable WebSocket server URL to use by JS client
+  config.after_initialize do
+    config.action_cable.url = ActionCable.server.config.url = ENV.fetch("CABLE_URL", "ws://localhost:8080/cable") if AnyCable::Rails.enabled?
+  end
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
